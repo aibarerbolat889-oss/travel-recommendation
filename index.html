@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wanderly Travel Recommendations</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home">Wanderly</a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Find your next escape</p>
+        <h1>Travel farther.<br /><span>Feel more.</span></h1>
+        <p class="intro">Discover beautiful beaches, ancient temples, and unforgettable countries with recommendations made for curious travelers.</p>
+        <div class="search-box">
+          <label for="searchInput" class="sr-only">Search recommendations</label>
+          <input id="searchInput" type="search" placeholder="Search beach, temple, or country" />
+          <button id="searchButton" type="button">Search</button>
+          <button id="clearButton" class="secondary" type="button">Clear</button>
+        </div>
+        <p id="searchMessage" class="search-message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="recommendations" class="recommendations" aria-live="polite"></section>
+
+    <section id="about" class="content-section">
+      <div>
+        <p class="eyebrow">About us</p>
+        <h2>Travel ideas for every kind of explorer.</h2>
+      </div>
+      <p>Wanderly is a simple travel recommendation guide for people who want inspiration before their next adventure. Search a destination type and explore hand-picked ideas, practical details, and memorable places.</p>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+      <div>
+        <p class="eyebrow">Contact us</p>
+        <h2>Have a destination in mind?</h2>
+        <p>Send us a message and tell us what kind of trip you are planning.</p>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send message</button>
+        <p id="formMessage" class="search-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>© 2026 Wanderly Travel Recommendations</footer>
+  <script src="script.js"></script>
+</body>
+</html>
